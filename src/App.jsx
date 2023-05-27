@@ -1,13 +1,13 @@
-import MeuComponente from './components/MyComponents'
-import reactLogo from './assets/react.svg'
-import myApi from './components/MyApi'
+// import MeuComponente from './components/MyComponents'
+// import reactLogo from './assets/react.svg'
+import MyApi from './components/MyApi'
 
 function App() {
 
   return (
     <div>
       <h1>Busca de dados - API</h1>
-      <myApi />
+      <MyApi />
     </div>
   )
 }
