@@ -8,7 +8,7 @@ const tarefas = [
 ]
 
 export default function MyApi() {
-    
+
 
     const [tarefas, setTarefas] = useState([])
 
@@ -24,12 +24,15 @@ export default function MyApi() {
 
     return (<div>
         <ol>
-        {tarefas.map((tarefa) => {
-            return (
-                <li key={tarefa.id
-                }>{tarefa.title}</li>
-            )
-        })}
+            {tarefas.map((tarefa) => {
+                return (
+                    <div>
+                        <li key={tarefa.id
+                        }>{tarefa.title}
+                            {tarefa.completed ? <span style={{color: "green"}}> - Tarefa terminada</span> : null}</li>
+                    </div>
+                )
+            })}
         </ol>
     </div>
     )
