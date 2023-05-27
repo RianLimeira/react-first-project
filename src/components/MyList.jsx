@@ -1,12 +1,18 @@
 const myList = [
-    <h4 key="1">Item1</h4>,
-    <h4 key="2">Item2</h4>,
-    <h4 key="3">Item3</h4>,
-    <h4 key="4">Item4</h4>,
+    {id: '1', value:'Fruta'},
+    {id: '2', value:'Legumes'},
+    {id: '3', value:'Carne'},
+    {id: '4', value:'Doces'},
 ]
 
 export default function MyList() {
-
+    return myList.map((item) => {
+        return (
+            <div key={item.id}>
+                <h4>{item.value}</h4>
+            </div>
+        )
+    })
 
     return myList
 }
